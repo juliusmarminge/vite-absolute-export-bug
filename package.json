@@ -1,0 +1,36 @@
+{
+    "name": "my-pkg",
+    "version": "1.0.0",
+    "type": "module",
+    "exports": {
+      "./core": {
+        "import": {
+          "types": "./core/index.d.ts",
+          "default": "./core/index.js"
+        },
+        "require": {
+          "types": "./core/index.d.cts",
+          "default": "./core/index.cjs"
+        }
+      },
+      "./framework-a": {
+        "import": {
+          "types": "./framework-a/index.d.ts",
+          "default": "./framework-a/index.js"
+        },
+        "require": {
+          "types": "./framework-a/index.d.cts",
+          "default": "./framework-a/index.cjs"
+        }
+      }
+    },
+    "scripts": {
+      "build": "bunchee"
+    },
+    "devDependencies": {
+      "bunchee": "^4.4.8",
+      "typescript": "^5.3.3",
+      "vite": "^5.1.4"
+    }
+  }
+  
