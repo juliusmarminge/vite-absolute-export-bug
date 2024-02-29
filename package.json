@@ -25,7 +25,8 @@
       }
     },
     "scripts": {
-      "build": "bunchee"
+      "build": "bunchee",
+      "build:example": "pnpm -F example build"
     },
     "devDependencies": {
       "bunchee": "^4.4.8",
